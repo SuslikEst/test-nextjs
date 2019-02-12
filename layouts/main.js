@@ -31,22 +31,26 @@ const Layout = ({ children }) => {
                     }  
                 header, footer, main, nav, div {
                     padding: 1.2em;
-                    background: gold;
                     }
                 #pageHeader {
                     grid-area: header;
+                    background: gold;
                     }
                 #pageFooter {
                     grid-area: footer;
+                    background: gold;
                     }
                 #mainArticle { 
-                    grid-area: main;      
+                    grid-area: main;
+                    background: gold;      
                     }
                 #mainNav { 
-                    grid-area: nav; 
+                    grid-area: nav;
+                    background: gold; 
                     }
                 #siteAds { 
                     grid-area: ads; 
+                    background: gold;
                     } 
                 /* Stack the layout on small devices/viewports. */
                 @media all and (max-width: 575px) {
