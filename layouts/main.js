@@ -1,7 +1,8 @@
+import Head from '../components/head'
 const Layout = ({ children }) => {
     return (
         <div>
-            <h3>Hi all!</h3>
+            <Head />
             { children }
         </div>
     )
