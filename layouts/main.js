@@ -9,18 +9,18 @@ const Layout = ({ children }) => {
         <div id="wrapper">
             <Head />
             <Header />
-            <main  id="mainArticle">
+            <main id="mainArticle">
                 { children }
             </main>
             <Leftsidebar />
             <Rightsidebar />
             <Footer />
-            <style jsx>{`
+            <style jsx global>{`
                 #wrapper{ 
                     display: grid;
                     grid-template-areas: 
                     "header header header"
-                    "nav article ads"
+                    "nav main ads"
                     "footer footer footer";
                     grid-template-rows: 80px 1fr 70px;  
                     grid-template-columns: 20% 1fr 15%;
@@ -29,7 +29,7 @@ const Layout = ({ children }) => {
                     height: 100vh;
                     margin: 0;
                     }  
-                header, footer, article, nav, div {
+                header, footer, main, nav, div {
                     padding: 1.2em;
                     background: gold;
                     }
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
                     grid-area: footer;
                     }
                 #mainArticle { 
-                    grid-area: article;      
+                    grid-area: main;      
                     }
                 #mainNav { 
                     grid-area: nav; 
@@ -53,7 +53,7 @@ const Layout = ({ children }) => {
                     #wrapper { 
                     grid-template-areas: 
                         "header"
-                        "article"
+                        "main"
                         "ads"
                         "nav"
                         "footer";

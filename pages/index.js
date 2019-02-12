@@ -3,9 +3,10 @@ import React from 'react'
 
 const Home = () => (
   <Layout>  
-    <div>
+    <main>
       <h1>Hello world!!!</h1>
-    </div>
+    </main>
+    
   </Layout>
 )
 

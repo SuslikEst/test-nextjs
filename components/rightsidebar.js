@@ -1,6 +1,6 @@
 const Rightsidebar = () => {
     return (
-        <div id="siteAds">Ads</div>
+        <aside id="siteAds">Ads</aside>
     )
 }
 
