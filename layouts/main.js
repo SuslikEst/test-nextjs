@@ -16,6 +16,11 @@ const Layout = ({ children }) => {
             <Rightsidebar />
             <Footer />
             <style jsx global>{`
+                *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
                 #wrapper{ 
                     display: grid;
                     grid-template-areas: 
@@ -29,7 +34,7 @@ const Layout = ({ children }) => {
                     height: 100vh;
                     margin: 0;
                     }  
-                header, footer, main, nav, div {
+                header, footer, main, nav {
                     padding: 1.2em;
                     }
                 #pageHeader {
